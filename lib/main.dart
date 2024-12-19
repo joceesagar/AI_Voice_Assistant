@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jarvis/homepage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,6 +10,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text("hello world");
+    return const MaterialApp(
+      title: 'Jarvis',
+      home: Homepage(),
+    );
   }
 }
